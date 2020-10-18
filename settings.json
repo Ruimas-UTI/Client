@@ -1,0 +1,18 @@
+{
+    "license-header-manager.additionalCommentStyles": [{
+        "extension": ".js",
+        "commentStart": " /*",
+        "commentMiddle": " * ",
+        "commentEnd": " */"
+    }],
+    "license-header-manager.excludeExtensions": [
+        ".json",
+        ".sh"
+    ],
+    "license-header-manager.excludeFolders": [
+        "node_modules",
+        ".next",
+        ".dependabot",
+        ".vscode"
+    ]
+}

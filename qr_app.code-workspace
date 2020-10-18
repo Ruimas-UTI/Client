@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"svn.delete.ignoredRulesForDeletedFiles": [
+			".next/build-manifest.json",
+			".next/react-loadable-manifest.json",
+			".next/server",
+			".next/server/pages-manifest.json",
+			".next/server/ssr-module-cache.js",
+			".next/static",
+			".next/static/chunks/0.js",
+			".next/static/chunks/0.js.map",
+			".next/static/chunks/styles.js",
+			".next/static/chunks/styles.js.map",
+			".next/static/css/styles.chunk.css",
+			".next/static/css/styles.chunk.css.map",
+			".next/static/runtime/amp.js",
+			".next/static/runtime/amp.js.map",
+			".next/static/runtime/main.js",
+			".next/static/runtime/main.js.map",
+			".next/static/runtime/webpack.js",
+			".next/static/runtime/webpack.js.map"
+		]
+	}
+}

@@ -1,0 +1,49 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLDeployment</id><coordinates><x>177</x><y>10</y><w>650</w><h>270</h></coordinates><panel_attributes>Shopify</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLDeployment</id><coordinates><x>187</x><y>500</y><w>640</w><h>150</h></coordinates><panel_attributes>Backend (Java EE Application + ZMQ)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>227</x><y>50</y><w>570</w><h>220</h></coordinates><panel_attributes>&lt;&lt;add-in&gt;&gt;
+qr_app (NodeJS)
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLDeployment</id><coordinates><x>507</x><y>300</y><w>320</w><h>150</h></coordinates><panel_attributes>MongoDb
+bg=green
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>337</x><y>260</y><w>190</w><h>160</h></coordinates><panel_attributes>
+mongodb queries
+</panel_attributes><additional_attributes>170;120;10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>237</x><y>260</y><w>110</w><h>260</h></coordinates><panel_attributes>0MQ / 
+ZMQ Messages</panel_attributes><additional_attributes>10;10;10;240</additional_attributes></element><element><id>UMLNote</id><coordinates><x>237</x><y>550</y><w>270</w><h>90</h></coordinates><panel_attributes>- Modifies merchant credentials
+- Creates PDF invoices, etc.
+- Sends reminder mails
+- Updates reminders/states
+- Synchronizes orders in MongoDB
+
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>727</x><y>440</y><w>120</w><h>80</h></coordinates><panel_attributes>mongodb queries</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLNote</id><coordinates><x>247</x><y>170</y><w>190</w><h>70</h></coordinates><panel_attributes>Infrastructure for shopify
+--
+- Un/Installing add-in (OAuth 2)
+- GDPR endpoints
+
+
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>537</x><y>340</y><w>270</w><h>100</h></coordinates><panel_attributes>- merchants (api credentials!)
+- invoices
+- orders
+- reminders
+- payouts
+
+
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>177</x><y>750</y><w>700</w><h>230</h></coordinates><panel_attributes>Prerequisites (tbd/c)
+
+[  ] No technology change. Rails will be used for testing only (integration testing?)
+     How about extending NodeJS basis and add tests in Mocha &amp; Chai?
+[  ] Effort estimation (1-2 days)
+     [  ] Estimate on adding features
+     [  ] Estimate efforts to add tests to the existing add-in (with all features)
+[  ] Access to add-in code base at GitHub provided
+[x] Access to shopify dev. shop provided
+[  ] DB dump of mongo privided (on Github)
+[  ] Issue creation of things to extend/complete features
+   [  ] Multi lang support
+
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>477</x><y>100</y><w>310</w><h>160</h></coordinates><panel_attributes>- Overview of invoices
+   - Trigger re-generation of invoice
+   - Trigger sending it again to customers
+- Overview of payments
+- Triggering of payouts
+- Optional: App status (health of api)
+- Link to legal information
+- Show/update merchant creditor settings
+
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element></diagram>
